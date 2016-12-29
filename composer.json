@@ -1,0 +1,13 @@
+{
+    "name": "xaamin/blade",
+    "description": "Laravel blade templating out of the box",
+    "authors": [
+        {
+            "name": "Benjamín Martínez Mateos",
+            "email": "xaamin@outlook.com"
+        }
+    ],
+    "require": {
+        "illuminate/view": "5.0 - 5.3"
+    }
+}
