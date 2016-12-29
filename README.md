@@ -19,15 +19,15 @@ Create a Blade instance by passing it the folder(s) where your view files are lo
 ```php
     use Xaamin\Blade\View;
 
-    $blade = new Blade('views', 'cache');
+    $view = new View('views', 'cache');
 
-    echo $blade->make('home', ['name' => 'John Doe']);
+    echo $view->make('home', ['name' => 'John Doe']);
 ```
 
 Now you can easily create a directive by calling the ``compiler()`` function
 
 ```php
-    $blade->compiler()->directive('money', function ($expression) {
+    $view->compiler()->directive('money', function ($expression) {
         return "<?= '$ ' . number_format($expression, 2, '.', ','); ?>";
     });
 ```
