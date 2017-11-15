@@ -8,6 +8,11 @@
         }
     ],
     "require": {
-        "illuminate/view": "5.0 - 5.3"
+        "illuminate/view": "5.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Xaamin\\Blade\\": "src/"
+        }
     }
 }
